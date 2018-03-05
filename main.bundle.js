@@ -547,7 +547,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/create-workout/create-new-workout-dialog.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\">Create workout for: {{data.date}}</h4>\n  <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"date=null\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n</div>\n<div class=\"modal-body\">\n  Workout Name: <input type=\"text\" [(ngModel)]=\"workout.workoutName\">\n  Public: <mat-slide-toggle\n            [color]=\"primary\"\n            [checked]=\"isPublic\"\n            [change]=\"changeEmit\">\n\n</mat-slide-toggle>\n</div>\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-success\" (click)=\"create(workout)\">Create workout</button>\n</div>\n"
+module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\">Create workout for: {{data.date}}</h4>\n  <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"date=null\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n</div>\n<div class=\"modal-body\">\n  Workout Name: <input type=\"text\" [(ngModel)]=\"workout.workoutName\">\n  Public:\n</div>\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-success\" (click)=\"create(workout)\">Create workout</button>\n</div>\n"
 
 /***/ }),
 
@@ -1257,7 +1257,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var UrlService = /** @class */ (function () {
     function UrlService() {
-        this.base = 'http://192.168.0.22:8080';
+        this.base = 'http://35.196.12.4:8080';
         // auth
         this.auth = this.base + '/auth';
         this.login = this.auth + '/login';
