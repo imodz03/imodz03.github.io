@@ -293,6 +293,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__register_register_component__ = __webpack_require__("./src/app/register/register.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__workout_details_workout_details_component__ = __webpack_require__("./src/app/workout-details/workout-details.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__exercise_exercise_component__ = __webpack_require__("./src/app/exercise/exercise.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dashboard_dashboard_component__ = __webpack_require__("./src/app/dashboard/dashboard.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -309,7 +310,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_10__dashboard_dashboard_component__["a" /* DashboardComponent */] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_3__login_login_component__["a" /* LoginComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_7__register_register_component__["a" /* RegisterComponent */] },
     { path: 'workouts', component: __WEBPACK_IMPORTED_MODULE_4__workout_workout_component__["a" /* WorkoutComponent */] },
@@ -325,11 +328,11 @@ var AppRoutingModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(routes)
+                __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */].forRoot(routes)
             ],
             declarations: [],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */]
+                __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
             ]
         })
     ], AppRoutingModule);
@@ -452,12 +455,14 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__create_workout_create_workout_component__ = __webpack_require__("./src/app/create-workout/create-workout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__dashboard_dashboard_component__ = __webpack_require__("./src/app/dashboard/dashboard.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -499,7 +504,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_18__workout_details_workout_details_component__["a" /* WorkoutDetailsComponent */],
                 __WEBPACK_IMPORTED_MODULE_21__exercise_exercise_component__["a" /* ExerciseComponent */],
                 __WEBPACK_IMPORTED_MODULE_24__create_workout_create_workout_component__["a" /* CreateWorkoutComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__myworkout_myworkout_component__["a" /* CreateNewDialog */]
+                __WEBPACK_IMPORTED_MODULE_15__myworkout_myworkout_component__["a" /* CreateNewDialog */],
+                __WEBPACK_IMPORTED_MODULE_25__dashboard_dashboard_component__["a" /* DashboardComponent */]
             ],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_15__myworkout_myworkout_component__["a" /* CreateNewDialog */]
@@ -513,12 +519,14 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_17__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_3__angular_forms__["i" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_22__angular_material__["b" /* MatAutocompleteModule */],
-                __WEBPACK_IMPORTED_MODULE_22__angular_material__["c" /* MatDatepickerModule */],
-                __WEBPACK_IMPORTED_MODULE_22__angular_material__["f" /* MatNativeDateModule */],
-                __WEBPACK_IMPORTED_MODULE_22__angular_material__["i" /* MatSnackBarModule */],
+                __WEBPACK_IMPORTED_MODULE_22__angular_material__["d" /* MatDatepickerModule */],
+                __WEBPACK_IMPORTED_MODULE_22__angular_material__["g" /* MatNativeDateModule */],
+                __WEBPACK_IMPORTED_MODULE_22__angular_material__["k" /* MatSnackBarModule */],
                 __WEBPACK_IMPORTED_MODULE_23__angular_platform_browser_animations__["a" /* NoopAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_22__angular_material__["g" /* MatSlideToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_22__angular_material__["e" /* MatDialogModule */]
+                __WEBPACK_IMPORTED_MODULE_22__angular_material__["i" /* MatSlideToggleModule */],
+                __WEBPACK_IMPORTED_MODULE_22__angular_material__["f" /* MatDialogModule */],
+                __WEBPACK_IMPORTED_MODULE_22__angular_material__["c" /* MatCheckboxModule */],
+                __WEBPACK_IMPORTED_MODULE_22__angular_material__["h" /* MatProgressSpinnerModule */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_9__login_login_service__["a" /* LoginService */],
@@ -547,7 +555,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/create-workout/create-new-workout-dialog.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\">Create workout for: {{data.date}}</h4>\n  <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"date=null\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n</div>\n<div class=\"modal-body\">\n  Workout Name: <input type=\"text\" [(ngModel)]=\"workout.workoutName\">\n  Public:\n</div>\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-success\" (click)=\"create(workout)\">Create workout</button>\n</div>\n"
+module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\">Create workout for: {{data.date}}</h4>\n  <button type=\"button\" class=\"close\" aria-label=\"Close\" tabIndex=\"-1\" mat-dialog-close (click)=\"date=null\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n</div>\n<div class=\"modal-body\">\n  Workout Name: <input type=\"text\" [(ngModel)]=\"workout.workoutName\"> <br><br>\n  Public: <mat-checkbox [(ngModel)]=\"this.workout.public\"></mat-checkbox><br>\n  Initial Exercise: <br>\n  <mat-form-field>\n    <input type=\"text\" (input)=\"typedIn = true\" matInput [(ngModel)]=\"currentInput\" [formControl]=\"myControl\" [matAutocomplete]=\"auto\" >\n  </mat-form-field>\n  <!-- Autocomplete suggestions for the searchbar -->\n  <mat-autocomplete #auto=\"matAutocomplete\">\n    <mat-option *ngFor=\"let exercise of filteredOptions | async\" [value]=\"exercise\">\n      {{ exercise }}\n    </mat-option>\n  </mat-autocomplete>\n</div>\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-success\" (click)=\"create(workout)\">Create workout</button>\n</div>\n"
 
 /***/ }),
 
@@ -595,6 +603,62 @@ var CreateWorkoutComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], CreateWorkoutComponent);
     return CreateWorkoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/dashboard/dashboard.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/dashboard/dashboard.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  dashboard works!\n  <button (click)=\"goTo()\">test</button>\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/dashboard/dashboard.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DashboardComponent = /** @class */ (function () {
+    function DashboardComponent(router) {
+        this.router = router;
+    }
+    DashboardComponent.prototype.ngOnInit = function () {
+    };
+    DashboardComponent.prototype.goTo = function () {
+        this.router.navigate(['/myworkouts']);
+    };
+    DashboardComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+            selector: 'app-dashboard',
+            template: __webpack_require__("./src/app/dashboard/dashboard.component.html"),
+            styles: [__webpack_require__("./src/app/dashboard/dashboard.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
+    ], DashboardComponent);
+    return DashboardComponent;
 }());
 
 
@@ -711,9 +775,9 @@ module.exports = "<div *ngIf=\"loginFailed\" class=\"alert alert-danger alert-di
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_service__ = __webpack_require__("./src/app/login/login.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_user_service__ = __webpack_require__("./src/app/user/user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_service__ = __webpack_require__("./src/app/login/login.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_user_service__ = __webpack_require__("./src/app/user/user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -728,25 +792,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(loginService, location, userService) {
+    function LoginComponent(loginService, userService, router) {
         this.loginService = loginService;
-        this.location = location;
         this.userService = userService;
+        this.router = router;
         this.loginFailed = false;
         this.userUpdated = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* EventEmitter */]();
         this.user = {
-            username: 'Brown27',
-            pass: 'PasswordTest',
+            username: '',
+            pass: '',
             token: ''
         };
     }
     LoginComponent.prototype.ngOnInit = function () {
     };
-    LoginComponent.prototype.login = function (user) {
+    LoginComponent.prototype.login = function (tryuser) {
         var _this = this;
-        this.loginService.login(user)
+        this.loginService.login(tryuser)
             .subscribe(function (user) {
-            console.log(user);
             if (user.token === 'invalid') {
                 // logic for fail
                 console.log('login failed');
@@ -758,8 +821,7 @@ var LoginComponent = /** @class */ (function () {
                 _this.user.token = user.token;
                 localStorage.setItem('username', _this.user.username);
                 localStorage.setItem('token', _this.user.token);
-                _this.location.go('/account', '');
-                _this.location.forward();
+                _this.router.navigate(['/']);
             }
         });
     };
@@ -773,7 +835,7 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/login/login.component.html"),
             styles: [__webpack_require__("./src/app/login/login.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__login_service__["a" /* LoginService */], __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* Location */], __WEBPACK_IMPORTED_MODULE_3__user_user_service__["a" /* UserService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__login_service__["a" /* LoginService */], __WEBPACK_IMPORTED_MODULE_2__user_user_service__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -853,6 +915,11 @@ module.exports = "<div class=\"container\">\n  <br>\n  <div id='calendar'></div>
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_fullcalendar__ = __webpack_require__("./node_modules/fullcalendar/dist/fullcalendar.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_fullcalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_fullcalendar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__exercise_exercise_service__ = __webpack_require__("./src/app/exercise/exercise.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operators_startWith__ = __webpack_require__("./node_modules/rxjs/_esm5/operators/startWith.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operators_map__ = __webpack_require__("./node_modules/rxjs/_esm5/operators/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -865,6 +932,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+
+
+
+
+
 
 
 
@@ -888,7 +960,7 @@ var MyworkoutComponent = /** @class */ (function () {
                 _this.myworkouts.push({ title: list[i].workoutName, date: list[i].date, workout: list[i], parent: _this });
             }
             if (list.length === 0) {
-                // add fake event to get parent
+                _this.myworkouts.push({ parent: _this });
             }
             _this.loadCalender();
         });
@@ -905,7 +977,6 @@ var MyworkoutComponent = /** @class */ (function () {
     };
     MyworkoutComponent.prototype.clicked = function (event) {
         event.parent.selectedWorkout = event.workout;
-        console.log(event.parent.selectedWorkout.workoutID);
         event.parent.openQuickView();
     };
     MyworkoutComponent.prototype.selectDate = function (p1, p2, p3) {
@@ -919,9 +990,6 @@ var MyworkoutComponent = /** @class */ (function () {
             parent.newWorkout = new __WEBPACK_IMPORTED_MODULE_2__workout__["a" /* Workout */]();
         });
     };
-    MyworkoutComponent.prototype.createWorkout = function (workout) {
-        console.log(workout);
-    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])('details'),
         __metadata("design:type", Object)
@@ -934,22 +1002,75 @@ var MyworkoutComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__workout_workout_service__["a" /* WorkoutService */],
             __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__["b" /* NgbModal */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["d" /* MatDialog */]])
+            __WEBPACK_IMPORTED_MODULE_4__angular_material__["e" /* MatDialog */]])
     ], MyworkoutComponent);
     return MyworkoutComponent;
 }());
 
+// class for dialog popup
 var CreateNewDialog = /** @class */ (function () {
-    function CreateNewDialog(data) {
+    function CreateNewDialog(data, exerciseService, workoutService, router, snackbar) {
         this.data = data;
-        this.isPublic = true;
+        this.exerciseService = exerciseService;
+        this.workoutService = workoutService;
+        this.router = router;
+        this.snackbar = snackbar;
+        this.exerciseNames = [];
+        this.myControl = new __WEBPACK_IMPORTED_MODULE_8__angular_forms__["b" /* FormControl */]();
+        this.currentInput = '';
+        this.typedIn = false;
         this.workout = data.workout;
         this.workout.public = false;
     }
     CreateNewDialog.prototype.ngOnInit = function () {
+        var _this = this;
+        this.exerciseService.getAll().subscribe(function (resp) {
+            _this.exercises = resp;
+            for (var i = 0; i < resp.length; i++) {
+                _this.exerciseNames.push(resp[i].exerciseName);
+            }
+        });
+        this.filteredOptions = this.myControl.valueChanges
+            .pipe(Object(__WEBPACK_IMPORTED_MODULE_9_rxjs_operators_startWith__["a" /* startWith */])(''), Object(__WEBPACK_IMPORTED_MODULE_10_rxjs_operators_map__["a" /* map */])(function (value) { return _this.filter(value); }));
     };
-    CreateNewDialog.prototype.create = function () {
-        console.log(this.isPublic);
+    CreateNewDialog.prototype.create = function (workout) {
+        var _this = this;
+        var ex = this.getExercise(this.currentInput);
+        if (ex !== null && workout.workoutName !== '') {
+            workout.exerciseList = {};
+            workout.exerciseList.exercises = [];
+            workout.exerciseList.exercises[0] = {};
+            workout.exerciseList.exercises[0].exerciseName = ex.exerciseName;
+            workout.exerciseList.exercises[0].exerciseID = ex.exerciseID;
+            workout.date = this.data.date;
+            workout.workoutID = '';
+            this.workoutService.createWorkout(workout).subscribe(function (resp) {
+                if (resp.resp === 0) {
+                    _this.snackbar.open('Something went wrong creating your workout', 'Dismiss', { duration: 10000 });
+                }
+                else {
+                    _this.router.navigate(['/workouts/details/' + resp.resp]);
+                    _this.data.parent.dialogRef.close();
+                }
+            });
+        }
+        else {
+            this.snackbar.open('Workouts require a name and one exercise', 'Dismiss', { duration: 10000 });
+        }
+    };
+    CreateNewDialog.prototype.getExercise = function (name) {
+        for (var i = 0; i < this.exercises.length; i++) {
+            var temp = this.exercises[i];
+            if (temp.exerciseName.toLowerCase() === name.toLowerCase()) {
+                return this.exercises[i];
+            }
+        }
+        return null;
+    };
+    CreateNewDialog.prototype.filter = function (val) {
+        return this.exerciseNames.filter(function (option) {
+            return option.toLowerCase().indexOf(val.toLowerCase()) === 0;
+        });
     };
     CreateNewDialog = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -957,7 +1078,10 @@ var CreateNewDialog = /** @class */ (function () {
             template: __webpack_require__("./src/app/create-workout/create-new-workout-dialog.html")
         }),
         __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Inject */])(__WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MAT_DIALOG_DATA */])),
-        __metadata("design:paramtypes", [Object])
+        __metadata("design:paramtypes", [Object, __WEBPACK_IMPORTED_MODULE_7__exercise_exercise_service__["a" /* ExerciseService */],
+            __WEBPACK_IMPORTED_MODULE_1__workout_workout_service__["a" /* WorkoutService */],
+            __WEBPACK_IMPORTED_MODULE_11__angular_router__["b" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_material__["j" /* MatSnackBar */]])
     ], CreateNewDialog);
     return CreateNewDialog;
 }());
@@ -1037,14 +1161,14 @@ var NavigationComponent = /** @class */ (function () {
 /***/ "./src/app/register/register.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".loading-indicator {\n  position: fixed;\n  z-index: 999;\n  height: 2em;\n  width: 2em;\n  overflow: show;\n  margin: auto;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n}\n\n/* Transparent Overlay */\n\n.loading-indicator:before {\n  content: '';\n  display: block;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0,0,0,0.3);\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\" *ngIf=\"usernameTaken\">\n    Username taken\n    <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\" (click)=\"usernameTaken = false\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\" *ngIf=\"enterAll\">\n    Please enter all details\n    <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\" (click)=\"enterAll = false\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"panel\">\n    <div class=\"panel-heading\"><h3>Sign up</h3></div>\n    <div class=\"panel-body\">\n      <div class=\"form-group col-sm-6 \">\n        <label for=\"inputfname\">First Name*</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputfname\" placeholder=\"First Name\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.firstname\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"inputsname\">Surname</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputsname\" placeholder=\"Surname\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.surname\">\n      </div>\n      <div class=\"form-group col-sm-6 \">\n        <label for=\"inputUsername\">Username*</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputUsername\" placeholder=\"Username\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.username\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"exampleInputEmail1\">Email address*</label>\n        <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Email\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.email\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"passwordInput\">Password*</label>\n        <input type=\"password\" class=\"form-control\" id=\"passwordInput\" placeholder=\"Password\" (input)=\"statusChecking()\" (focus)=\"tried()\" [(ngModel)]=\"registerUser.password\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"confPasswordInput\">Confrim Password*</label>\n        <input type=\"password\" class=\"form-control\" id=\"confPasswordInput\" placeholder=\"Password\" (input)=\"statusChecking()\" [(ngModel)]=\"confPass\">\n        <p *ngIf=\"!passwordsMatch\">*Passwords do not match*</p>\n      </div>\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"form-group col-sm-3\">\n            <label for=\"weightInput\">Weight (KG)</label>\n            <input type=\"number\" class=\"form-control\" id=\"weightInput\" placeholder=\"Weight\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.weight\">\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"form-group col-sm-3\">\n            <label for=\"heightInput\">Height (CM)</label>\n            <input type=\"number\" class=\"form-control\" id=\"heightInput\" placeholder=\"Height\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.height\">\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"form-group col-sm-3\">\n            <label for=\"BodyfatInput\">Bodyfat perc (%)</label>\n            <input type=\"number\" class=\"form-control\" id=\"BodyfatInput\" placeholder=\"Bodyfat\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.bodyfatPerc\">\n          </div>\n        </div>\n        <br>\n        <button class=\"btn btn-success\" (click)=\"signup()\">Sign up</button>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\" *ngIf=\"usernameTaken\">\n    Username taken\n    <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\" (click)=\"usernameTaken = false\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\" *ngIf=\"enterAll\">\n    Please enter all details\n    <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\" (click)=\"enterAll = false\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"panel\">\n    <div class=\"panel-heading\"><h3>Sign up</h3></div>\n    <div class=\"panel-body\">\n      <div class=\"form-group col-sm-6 \">\n        <label for=\"inputfname\">First Name*</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputfname\" placeholder=\"First Name\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.firstname\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"inputsname\">Surname</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputsname\" placeholder=\"Surname\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.surname\">\n      </div>\n      <div class=\"form-group col-sm-6 \">\n        <label for=\"inputUsername\">Username*</label>\n        <input type=\"text\" class=\"form-control\" id=\"inputUsername\" placeholder=\"Username\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.username\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"exampleInputEmail1\">Email address*</label>\n        <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Email\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.email\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"passwordInput\">Password*</label>\n        <input type=\"password\" class=\"form-control\" id=\"passwordInput\" placeholder=\"Password\" (input)=\"statusChecking()\" (focus)=\"tried()\" [(ngModel)]=\"registerUser.password\">\n      </div>\n      <div class=\"form-group col-sm-6\">\n        <label for=\"confPasswordInput\">Confrim Password*</label>\n        <input type=\"password\" class=\"form-control\" id=\"confPasswordInput\" placeholder=\"Password\" (input)=\"statusChecking()\" [(ngModel)]=\"confPass\">\n        <p *ngIf=\"!passwordsMatch\">*Passwords do not match*</p>\n      </div>\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"form-group col-sm-3\">\n            <label for=\"weightInput\">Weight (KG)</label>\n            <input type=\"number\" class=\"form-control\" id=\"weightInput\" placeholder=\"Weight\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.weight\">\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"form-group col-sm-3\">\n            <label for=\"heightInput\">Height (CM)</label>\n            <input type=\"number\" class=\"form-control\" id=\"heightInput\" placeholder=\"Height\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.height\">\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"form-group col-sm-3\">\n            <label for=\"BodyfatInput\">Bodyfat perc (%)</label>\n            <input type=\"number\" class=\"form-control\" id=\"BodyfatInput\" placeholder=\"Bodyfat\" (input)=\"statusChecking()\" [(ngModel)]=\"registerUser.bodyfatPerc\">\n          </div>\n        </div>\n        <br>\n        <button class=\"btn btn-success\" (click)=\"signup()\">Sign up</button>\n        <div class=\"loading-indicator\" *ngIf=\"loading\"><mat-spinner style=\"margin:0 auto;\"></mat-spinner></div>\n        <br>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1055,7 +1179,7 @@ module.exports = "<div class=\"container\">\n  <div class=\"alert alert-warning 
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__user_user_service__ = __webpack_require__("./src/app/user/user.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1069,9 +1193,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var RegisterComponent = /** @class */ (function () {
-    function RegisterComponent(userService, location) {
+    function RegisterComponent(userService, router) {
         this.userService = userService;
-        this.location = location;
+        this.router = router;
         this.registerUser = {
             firstname: '',
             surname: '',
@@ -1089,29 +1213,38 @@ var RegisterComponent = /** @class */ (function () {
         this.error = false;
         this.valid = false;
         this.enterAll = false;
+        this.loading = false;
     }
     RegisterComponent.prototype.ngOnInit = function () {
     };
     RegisterComponent.prototype.signup = function () {
         var _this = this;
+        this.loading = true;
         if (this.valid === true) {
             this.userService.register(this.registerUser).subscribe(function (resp) {
                 if (resp.status === 'NA') {
                     _this.usernameTaken = true;
+                    _this.loading = false;
                 }
                 else if (resp.status === 'error') {
                     _this.error = true;
+                    _this.loading = false;
                 }
                 else {
                     localStorage.setItem('username', _this.registerUser.username);
                     localStorage.setItem('token', resp.status);
-                    _this.goHome();
+                    setTimeout(_this.gotTo, 2000, _this.router);
                 }
             });
         }
         else {
             this.enterAll = true;
+            this.loading = false;
         }
+    };
+    RegisterComponent.prototype.gotTo = function (router) {
+        this.loading = false;
+        router.navigate(['']);
     };
     RegisterComponent.prototype.validate = function () {
         if (this.registerUser.password !== this.confPass && this.triedConfPass) {
@@ -1123,10 +1256,6 @@ var RegisterComponent = /** @class */ (function () {
     };
     RegisterComponent.prototype.tried = function () {
         this.triedConfPass = true;
-    };
-    RegisterComponent.prototype.goHome = function () {
-        this.location.back();
-        this.location.back();
     };
     RegisterComponent.prototype.statusChecking = function () {
         this.validate();
@@ -1142,7 +1271,7 @@ var RegisterComponent = /** @class */ (function () {
             styles: [__webpack_require__("./src/app/register/register.component.css")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__user_user_service__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_common__["f" /* Location */]])
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]])
     ], RegisterComponent);
     return RegisterComponent;
 }());
@@ -1257,7 +1386,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var UrlService = /** @class */ (function () {
     function UrlService() {
-        this.base = 'http://35.196.12.4:8080';
+        this.base = 'http://api.elliotbrown.me:8080';
         // auth
         this.auth = this.base + '/auth';
         this.login = this.auth + '/login';
@@ -1582,7 +1711,7 @@ var WorkoutDetailsComponent = /** @class */ (function () {
             });
         }
         else {
-            this.snackBar.open('Workouts must have one exercuse', 'Dismiss', {
+            this.snackBar.open('Workouts must have one exercise', 'Dismiss', {
                 duration: 2000
             });
         }
@@ -1644,7 +1773,7 @@ var WorkoutDetailsComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_2__workout_workout_service__["a" /* WorkoutService */],
             __WEBPACK_IMPORTED_MODULE_3__services_exerciselist_service__["a" /* ExerciselistService */],
             __WEBPACK_IMPORTED_MODULE_4__exercise_exercise_service__["a" /* ExerciseService */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_material__["h" /* MatSnackBar */]])
+            __WEBPACK_IMPORTED_MODULE_5__angular_material__["j" /* MatSnackBar */]])
     ], WorkoutDetailsComponent);
     return WorkoutDetailsComponent;
 }());
@@ -1755,6 +1884,9 @@ var WorkoutService = /** @class */ (function () {
     };
     WorkoutService.prototype.updateWorkout = function (realWorkout) {
         return this.http.put(this.url.workouts + '/' + realWorkout.workoutID, realWorkout);
+    };
+    WorkoutService.prototype.createWorkout = function (workout) {
+        return this.http.post(this.url.workouts, workout);
     };
     WorkoutService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Injectable */])(),
