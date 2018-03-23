@@ -2222,7 +2222,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var UrlService = /** @class */ (function () {
     function UrlService() {
-        this.base = 'http://localhost:8080';
+        this.base = 'http://api.elliotbrown.me:8080';
         // base = 'http://172.17.24.30:8080';
         // auth
         this.auth = this.base + '/auth';
