@@ -596,7 +596,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_33__sets_components_add_set_add_set_component__["a" /* AddSetComponent */],
                 __WEBPACK_IMPORTED_MODULE_35__workout_components_log_log_component__["a" /* LogComponent */],
                 __WEBPACK_IMPORTED_MODULE_36__simple_dialog_simple_dialog_component__["a" /* SimpleDialogComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__exercise_components_create_exercise_create_exercise_component__["a" /* CreateExerciseComponent */]
+                __WEBPACK_IMPORTED_MODULE_26__exercise_components_create_exercise_create_exercise_component__["a" /* CreateExerciseComponent */],
+                __WEBPACK_IMPORTED_MODULE_29__workout_components_addworkout_addworkout_component__["a" /* AddworkoutComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -1786,10 +1787,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 var ConnectionService = /** @class */ (function () {
+    // private checkUrl = 'http://api.elliotbrown.me:8080/test';
     function ConnectionService() {
         this.connected = false;
-        // private checkUrl = 'http://localhost:8080/test';
-        this.checkUrl = 'http://api.elliotbrown.me:8080/test';
+        this.checkUrl = 'http://localhost:8080/test';
         this.check();
     }
     ConnectionService.prototype.check = function () {
@@ -2063,8 +2064,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var UrlService = /** @class */ (function () {
     function UrlService() {
-        // base = 'http://localhost:8080';
-        this.base = 'http://api.elliotbrown.me:8080';
+        this.base = 'http://localhost:8080';
+        // base = 'http://api.elliotbrown.me:8080';
         // auth
         this.auth = this.base + '/auth';
         this.login = this.auth + '/login';
