@@ -1787,10 +1787,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 var ConnectionService = /** @class */ (function () {
-    // private checkUrl = 'http://api.elliotbrown.me:8080/test';
     function ConnectionService() {
         this.connected = false;
-        this.checkUrl = 'http://localhost:8080/test';
+        // private checkUrl = 'http://localhost:8080/test';
+        this.checkUrl = 'http://api.elliotbrown.me:8080/test';
         this.check();
     }
     ConnectionService.prototype.check = function () {
@@ -2064,8 +2064,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var UrlService = /** @class */ (function () {
     function UrlService() {
-        this.base = 'http://localhost:8080';
-        // base = 'http://api.elliotbrown.me:8080';
+        // base = 'http://localhost:8080';
+        this.base = 'http://api.elliotbrown.me:8080';
         // auth
         this.auth = this.base + '/auth';
         this.login = this.auth + '/login';
